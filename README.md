@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React Redux Demo
+This demo explores the [React-Redux](https://github.com/reduxjs/react-redux) flow by creating a *Todo Management App* 
+
++ Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
++ UI Design components by [Matrial UI](https://material-ui.com/)
++ Implementation by Ignacio Villamar
+
 
 ## Available Scripts
 
