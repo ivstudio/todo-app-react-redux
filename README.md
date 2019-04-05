@@ -5,6 +5,7 @@ This demo explores the [React-Redux](https://github.com/reduxjs/react-redux) flo
 + UI Design components by [Matrial UI](https://material-ui.com/)
 + Implementation by Ignacio Villamar
 
+[View Live Demo](http://ignaciovillamar.com/todo-app-react-redux/)
 
 ## Available Scripts
 
