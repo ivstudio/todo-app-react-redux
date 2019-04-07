@@ -27,24 +27,29 @@ import TodoEmptyState from "./todoEmptyState";
 class Todos extends Component {
   //render TodoItems
   renderTodos() {
-    const renderTodoItem = this.props.tasks.map(todo => {
+    const {
+      todos,
+      deleteTodo,
+      updateTodo,
+      toggleDoneTodo,
+      todosFilter
+    } = this.props;
+    const renderTodoItem = todos.map(todo => {
       return (
         <TodoItem
           key={todo.id}
           todoItem={todo}
-          onItemDelete={id => this.props.deleteTodo(id)}
-          onUpdateTodo={(id, content) => this.props.updateTodo(id, content)}
-          onItemToggleComplete={id => this.props.toggleDoneTodo(id)}
+          onItemDelete={id => deleteTodo(id)}
+          onUpdateTodo={(id, content) => updateTodo(id, content)}
+          onItemToggleComplete={id => toggleDoneTodo(id)}
         />
       );
     });
 
     return (
       <List>
-        {this.props.tasks.length > 0 && <Divider />}
-        {!this.props.tasks.length && (
-          <TodoEmptyState activeFilter={this.props.todosFilter} />
-        )}
+        {todos.length > 0 && <Divider />}
+        {!todos.length && <TodoEmptyState activeFilter={todosFilter}/>}
         {renderTodoItem}
       </List>
     );
@@ -55,7 +60,7 @@ class Todos extends Component {
   }
 }
 
-//filter tasks
+//filter todos
 const setFilterTodos = (todos, filter) => {
   switch (filter) {
     case SHOW_ALL_TODOS:
@@ -84,7 +89,7 @@ function mapDispatchToProps(dispatch) {
 //return data our component needs
 function mapStateToProps({ todos, todosFilter }) {
   return {
-    tasks: setFilterTodos(todos, todosFilter),
+    todos: setFilterTodos(todos, todosFilter),
     todosFilter
   };
 }

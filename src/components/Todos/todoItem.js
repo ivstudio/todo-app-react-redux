@@ -25,7 +25,7 @@ const TodoItem = ({
   return (
     <Fragment>
       <ListItem>
-        <Tooltip title="Completed">
+        <Tooltip title="Completed" placement="right">
           <Checkbox
             checked={todoItem.completed}
             onChange={() => onItemToggleComplete(todoItem.id)}
@@ -43,7 +43,7 @@ const TodoItem = ({
         />
 
         <ListItemSecondaryAction onClick={() => onItemDelete(todoItem.id)}>
-          <Tooltip title="Delete">
+          <Tooltip title="Delete" placement="right">
             <IconButton aria-label="delete todo">
               <DeleteOutline />
             </IconButton>

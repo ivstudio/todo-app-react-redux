@@ -9,7 +9,7 @@ import {
   SHOW_ACTIVE_TODOS
 } from "../../redux/constants/constants";
 
-//actions
+//action creator
 import { filterTodos } from "../../redux/actions/todoActions";
 
 //material-ui components
@@ -33,7 +33,7 @@ const FilterTodos = props => {
   }
 
   //dispatch filter action and close menu
-  function handleStateChange(state) {
+  function handleChange(state) {
     props.filterTodos(state);
     handleClose();
   }
@@ -54,13 +54,13 @@ const FilterTodos = props => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={() => handleStateChange(SHOW_ALL_TODOS)}>
+        <MenuItem onClick={() => handleChange(SHOW_ALL_TODOS)}>
           All
         </MenuItem>
-        <MenuItem onClick={() => handleStateChange(SHOW_ACTIVE_TODOS)}>
+        <MenuItem onClick={() => handleChange(SHOW_ACTIVE_TODOS)}>
           Active
         </MenuItem>
-        <MenuItem onClick={() => handleStateChange(SHOW_COMPLETED_TODOS)}>
+        <MenuItem onClick={() => handleChange(SHOW_COMPLETED_TODOS)}>
           Completed
         </MenuItem>
       </Menu>

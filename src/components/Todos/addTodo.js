@@ -1,7 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
+
+//action creator
 import { addTodo } from "../../redux/actions/todoActions";
 
+//material-ui components
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
