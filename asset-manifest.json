@@ -1,11 +1,19 @@
 {
-  "main.js": "/todo-app-react-redux/static/js/main.bfe8013d.chunk.js",
-  "main.js.map": "/todo-app-react-redux/static/js/main.bfe8013d.chunk.js.map",
-  "runtime~main.js": "/todo-app-react-redux/static/js/runtime~main.21871b44.js",
-  "runtime~main.js.map": "/todo-app-react-redux/static/js/runtime~main.21871b44.js.map",
-  "static/js/2.b04cd6bf.chunk.js": "/todo-app-react-redux/static/js/2.b04cd6bf.chunk.js",
-  "static/js/2.b04cd6bf.chunk.js.map": "/todo-app-react-redux/static/js/2.b04cd6bf.chunk.js.map",
-  "index.html": "/todo-app-react-redux/index.html",
-  "precache-manifest.e2f849ba465c28734411778a872dd76d.js": "/todo-app-react-redux/precache-manifest.e2f849ba465c28734411778a872dd76d.js",
-  "service-worker.js": "/todo-app-react-redux/service-worker.js"
+  "files": {
+    "main.js": "/todo-app-react-redux/static/js/main.befb1474.chunk.js",
+    "main.js.map": "/todo-app-react-redux/static/js/main.befb1474.chunk.js.map",
+    "runtime-main.js": "/todo-app-react-redux/static/js/runtime-main.7df25907.js",
+    "runtime-main.js.map": "/todo-app-react-redux/static/js/runtime-main.7df25907.js.map",
+    "static/js/2.494ea246.chunk.js": "/todo-app-react-redux/static/js/2.494ea246.chunk.js",
+    "static/js/2.494ea246.chunk.js.map": "/todo-app-react-redux/static/js/2.494ea246.chunk.js.map",
+    "index.html": "/todo-app-react-redux/index.html",
+    "precache-manifest.952de89d9e9cc5d7e433aa893d3bfef0.js": "/todo-app-react-redux/precache-manifest.952de89d9e9cc5d7e433aa893d3bfef0.js",
+    "service-worker.js": "/todo-app-react-redux/service-worker.js",
+    "static/js/2.494ea246.chunk.js.LICENSE.txt": "/todo-app-react-redux/static/js/2.494ea246.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7df25907.js",
+    "static/js/2.494ea246.chunk.js",
+    "static/js/main.befb1474.chunk.js"
+  ]
 }
