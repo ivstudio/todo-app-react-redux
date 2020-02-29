@@ -1,6 +1,6 @@
-import {SHOW_ALL_TODOS} from "../constants/constants";
+import { SHOW_ALL_TODOS } from '../constants/constants';
 
 export default {
-  todos: [],
-  todosFilter: SHOW_ALL_TODOS
+	todos: [],
+	todosFilter: SHOW_ALL_TODOS
 };
