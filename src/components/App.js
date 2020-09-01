@@ -9,8 +9,8 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
 	container: {
 		maxWidth: 500,
-		margin: `50px auto`
-	}
+		margin: `50px auto`,
+	},
 };
 
 const App = () => {

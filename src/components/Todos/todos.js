@@ -6,14 +6,14 @@ import { bindActionCreators } from 'redux';
 import {
 	SHOW_ALL_TODOS,
 	SHOW_COMPLETED_TODOS,
-	SHOW_ACTIVE_TODOS
+	SHOW_ACTIVE_TODOS,
 } from '../../redux/constants/constants';
 
 //action creators
 import {
 	updateTodo,
 	deleteTodo,
-	toggleDoneTodo
+	toggleDoneTodo,
 } from '../../redux/actions/todoActions';
 
 //material-ui components
@@ -32,16 +32,16 @@ class Todos extends Component {
 			deleteTodo,
 			updateTodo,
 			toggleDoneTodo,
-			todosFilter
+			todosFilter,
 		} = this.props;
-		const renderTodoItem = todos.map(todo => {
+		const renderTodoItem = todos.map((todo) => {
 			return (
 				<TodoItem
 					key={todo.id}
 					todoItem={todo}
-					onItemDelete={id => deleteTodo(id)}
+					onItemDelete={(id) => deleteTodo(id)}
 					onUpdateTodo={(id, content) => updateTodo(id, content)}
-					onItemToggleComplete={id => toggleDoneTodo(id)}
+					onItemToggleComplete={(id) => toggleDoneTodo(id)}
 				/>
 			);
 		});
@@ -66,9 +66,9 @@ const setFilterTodos = (todos, filter) => {
 		case SHOW_ALL_TODOS:
 			return todos;
 		case SHOW_COMPLETED_TODOS:
-			return todos.filter(t => t.completed);
+			return todos.filter((t) => t.completed);
 		case SHOW_ACTIVE_TODOS:
-			return todos.filter(t => !t.completed);
+			return todos.filter((t) => !t.completed);
 		default:
 			return todos;
 	}
@@ -80,7 +80,7 @@ function mapDispatchToProps(dispatch) {
 		{
 			deleteTodo,
 			updateTodo,
-			toggleDoneTodo
+			toggleDoneTodo,
 		},
 		dispatch
 	);
@@ -90,7 +90,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps({ todos, todosFilter }) {
 	return {
 		todos: setFilterTodos(todos, todosFilter),
-		todosFilter
+		todosFilter,
 	};
 }
 

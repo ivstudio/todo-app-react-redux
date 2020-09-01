@@ -4,18 +4,18 @@ import {
 	UPDATE_TODO,
 	DELETE_TODO,
 	TOGGLE_DONE_TODO,
-	SET_FILTER_TODOS
+	SET_FILTER_TODOS,
 } from '../constants/constants';
 
 //addTodo action creator
 let nextTodoId = 0;
-export const addTodo = content => {
+export const addTodo = (content) => {
 	return {
 		type: ADD_TODO,
 		payload: {
 			content,
-			id: nextTodoId++
-		}
+			id: nextTodoId++,
+		},
 	};
 };
 
@@ -25,35 +25,35 @@ export const updateTodo = (id, content) => {
 		type: UPDATE_TODO,
 		payload: {
 			id,
-			content
-		}
+			content,
+		},
 	};
 };
 
 //deleteTodo action creator
-export const deleteTodo = id => {
+export const deleteTodo = (id) => {
 	return {
 		type: DELETE_TODO,
 		payload: {
-			id
-		}
+			id,
+		},
 	};
 };
 
 //completedTodo action creator
-export const toggleDoneTodo = id => {
+export const toggleDoneTodo = (id) => {
 	return {
 		type: TOGGLE_DONE_TODO,
 		payload: {
-			id
-		}
+			id,
+		},
 	};
 };
 
 //filterTodos
-export const filterTodos = filter => {
+export const filterTodos = (filter) => {
 	return {
 		type: SET_FILTER_TODOS,
-		filter
+		filter,
 	};
 };

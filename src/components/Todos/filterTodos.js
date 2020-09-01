@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import {
 	SHOW_ALL_TODOS,
 	SHOW_COMPLETED_TODOS,
-	SHOW_ACTIVE_TODOS
+	SHOW_ACTIVE_TODOS,
 } from '../../redux/constants/constants';
 
 //action creator
@@ -17,7 +17,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
-const FilterTodos = props => {
+const FilterTodos = (props) => {
 	//material-ui menu
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const open = Boolean(anchorEl);
@@ -70,7 +70,7 @@ const FilterTodos = props => {
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators(
 		{
-			filterTodos
+			filterTodos,
 		},
 		dispatch
 	);
@@ -79,7 +79,7 @@ function mapDispatchToProps(dispatch) {
 //return data our component needs
 function mapStateToProps({ todosFilter }) {
 	return {
-		todosFilter
+		todosFilter,
 	};
 }
 

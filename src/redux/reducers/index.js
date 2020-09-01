@@ -5,7 +5,7 @@ import todosFilterReducer from './todoFilterReducer';
 //key names will used on our components
 const rootReducer = combineReducers({
 	todos: todosReducer,
-	todosFilter: todosFilterReducer
+	todosFilter: todosFilterReducer,
 });
 
 export default rootReducer;

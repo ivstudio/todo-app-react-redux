@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import {
-	SHOW_ALL_TODOS,
 	SHOW_COMPLETED_TODOS,
-	SHOW_ACTIVE_TODOS
+	SHOW_ACTIVE_TODOS,
 } from '../../redux/constants/constants';
 
 const styles = {
@@ -13,17 +12,17 @@ const styles = {
 		justifyContent: 'center',
 		height: '150px',
 		color: '#313777',
-		fontFamily: 'Montserrat, sans-serif'
+		fontFamily: 'Montserrat, sans-serif',
 	},
 	title: {
 		fontSize: '24px',
 		fontWeight: 'bold',
-		margin: '15px 0 5px'
+		margin: '15px 0 5px',
 	},
 	subtitle: {
 		fontSize: '16px',
-		margin: '5px 0'
-	}
+		margin: '5px 0',
+	},
 };
 
 //receive redux activeFilter and show correct message

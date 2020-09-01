@@ -16,9 +16,9 @@ const TodoItem = ({
 	todoItem,
 	onItemDelete,
 	onUpdateTodo,
-	onItemToggleComplete
+	onItemToggleComplete,
 }) => {
-	const handleTextChange = event => {
+	const handleTextChange = (event) => {
 		onUpdateTodo(todoItem.id, event.target.value);
 	};
 
@@ -37,7 +37,7 @@ const TodoItem = ({
 						<InputBase
 							multiline={true}
 							value={todoItem.content}
-							onChange={event => handleTextChange(event)}
+							onChange={(event) => handleTextChange(event)}
 						/>
 					}
 				/>

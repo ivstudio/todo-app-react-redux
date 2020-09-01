@@ -15,7 +15,7 @@ const AddTodo = ({ dispatch }) => {
 	return (
 		<form
 			autoComplete="off"
-			onSubmit={e => {
+			onSubmit={(e) => {
 				e.preventDefault();
 				if (!input.value.trim()) {
 					return;
@@ -26,7 +26,7 @@ const AddTodo = ({ dispatch }) => {
 			}}>
 			<TextField
 				id="addTask"
-				inputRef={node => (input = node)}
+				inputRef={(node) => (input = node)}
 				placeholder="Empty task"
 				fullWidth
 				margin="normal"
@@ -35,7 +35,7 @@ const AddTodo = ({ dispatch }) => {
 				multiline={true}
 				spellCheck="false"
 				InputLabelProps={{
-					shrink: true
+					shrink: true,
 				}}
 			/>
 
