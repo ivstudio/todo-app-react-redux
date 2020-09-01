@@ -2,7 +2,7 @@
 	"name": "todoapp",
 	"version": "0.1.1",
 	"private": true,
-	"homepage": "http://ignaciovillamar.com/todo-app-react-redux",
+	"homepage": "https://ivstudio.github.io/todo-app-react-redux/",
 	"dependencies": {
 		"@material-ui/core": "^3.9.4",
 		"@material-ui/icons": "^3.0.2",
