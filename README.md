@@ -5,11 +5,7 @@ This demo explores the [React-Redux](https://github.com/reduxjs/react-redux) flo
 -   Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 -   UI Design components by [Material UI](https://material-ui.com/)
 
-<<<<<<< HEAD
 [View Live Demo](https://ivstudio.github.io/todo-app-react-redux/)
-=======
-[View Live Demo](https://www.ivstudio.com/todo-app-react-redux/)
->>>>>>> 7a0a884d6b9d7c0d111633613c6a22108680f2b4
 
 ## Available Scripts
 
