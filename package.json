@@ -1,5 +1,5 @@
 {
-  "name": "todoapp",
+  "name": "react-redux",
   "version": "0.1.1",
   "private": true,
   "homepage": "https://ivstudio.github.io/todo-app-react-redux/",
@@ -34,5 +34,7 @@
   "devDependencies": {
     "prettier": "^1.19.1",
     "redux-devtools-extension": "^2.13.8"
-  }
+  },
+  "keywords": [],
+  "description": "Todo list using react-redux and Material-ui"
 }
